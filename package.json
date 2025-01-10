@@ -1,7 +1,7 @@
 {
-  "name": "sharp",
+  "name": "@gutenye/sharp",
   "description": "High performance Node.js image processing, the fastest module to resize JPEG, PNG, WebP, GIF, AVIF and TIFF images",
-  "version": "0.33.5",
+  "version": "0.33.5-raycast1",
   "author": "Lovell Fuller <npm@lovell.info>",
   "homepage": "https://sharp.pixelplumbing.com",
   "contributors": [
@@ -114,10 +114,7 @@
     "lib",
     "src/*.{cc,h,gyp}"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/lovell/sharp.git"
-  },
+  "repository": "gutenye/sharp#raycast",
   "keywords": [
     "jpeg",
     "png",
@@ -139,6 +136,8 @@
   "dependencies": {
     "color": "^4.2.3",
     "detect-libc": "^2.0.3",
+    "node-addon-api": "^8.3.0",
+    "node-gyp": "^11.0.0",
     "semver": "^7.6.3"
   },
   "optionalDependencies": {
@@ -178,7 +177,6 @@
     "jsdoc-to-markdown": "^9.0.0",
     "license-checker": "^25.0.1",
     "mocha": "^10.7.3",
-    "node-addon-api": "^8.1.0",
     "nyc": "^17.0.0",
     "prebuild": "^13.0.1",
     "semistandard": "^17.0.0",
